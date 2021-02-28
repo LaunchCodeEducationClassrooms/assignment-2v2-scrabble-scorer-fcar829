@@ -34,13 +34,13 @@ function oldScrabbleScorer(word) {
 
 function initialPrompt(word) {
    console.log("Let's play some scrabble!\n");
-  return input.question("Enter a word to score: ");
+  return input.question("Enter a word to be scored or 'Stop' to qui: ");
 
 
 };
 
 let simpleScore = function(word) {
-word = word.toUppercase();
+word = word.toUpperCase();
 let simplePoints = 0
 
 for (i = 0; i < word.length; i++) {
@@ -55,7 +55,7 @@ let vowelBonusScore = function(word){
 
   for (i = 0; i < word.length; i++) {
 
-    if (word[i] === 'A' || word[i] === 'E' || word[i] === 'I' || word[i] === 'O' || word[i] === 'U') {
+    if (word[i] === "A" || word[i] === "E" || word[i] === "I" || word[i] === "O" || word[i] === "U") {
       vowelPoints += 2;  
     } 
     vowelPoints += 1; 
