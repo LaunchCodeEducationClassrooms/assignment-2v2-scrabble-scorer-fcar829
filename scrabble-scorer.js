@@ -34,7 +34,7 @@ function oldScrabbleScorer(word) {
 
 function initialPrompt(word) {
    console.log("Let's play some scrabble!\n");
-  return input.question("Enter a word to be scored or 'Stop' to qui: ");
+  return input.question("Enter a word to be score: ");
 
 
 };
@@ -90,14 +90,14 @@ let number = input.question(`which scoring algorithm would you like to use?\n
 Enter 0, 1, or 2: `)
 
 if (number === '0') {
-  console.log("algorithm name: ", scoringAlgorithms[0].name);
+  console.log("Algorithm Name: ", scoringAlgorithms[0].name);
   return `scorerFunction result: ${scoringAlgorithms[0].scorerFunction(word)}`;
   } else if (number === '1') {
-    console.log("algorithm name: ", scoringAlgorithms[1].name);
-    return `scorerFunction result: ${scoringAlgorithms[1].scorerFunction(word)}`;
+    console.log("Algorithm Name: ", scoringAlgorithms[1].name);
+    return `Scorer result: ${scoringAlgorithms[1].scorerFunction(word)}`;
   } else if (number === '2') {
-    console.log("algorithm name: ", scoringAlgorithms[2].name);
-    return `scorerFunction result: ${scoringAlgorithms[2].scorerFunction(word)}`;
+    console.log("Algorithm Name: ", scoringAlgorithms[2].name);
+    return `Scorer result: ${scoringAlgorithms[2].scorerFunction(word)}`;
   }
 
 
